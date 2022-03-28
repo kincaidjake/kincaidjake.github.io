@@ -1,0 +1,88 @@
+/* base */
+
+@font-face {
+    font-family: helveticaNeue;
+    src: url("../fonts/HelveticaNeue.ttc");
+}
+
+body {
+    background-color: #ffffff;
+    margin: 16px;
+}
+
+p {
+    color: #000000;
+    font-size: 36px;
+    line-height: 40px;
+    font-family: helveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    grid-gap: 32px;
+    padding-top: 8px;
+}
+
+h1 {
+    color: #000000;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    letter-spacing: .04em;
+}
+
+.header {
+    padding-top: 4px;
+}
+
+.divider {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.16);
+    margin-top: 16px;
+}
+
+.spacer-01 {
+    height: 24px;
+}
+
+.spacer-02 {
+    height: 128px;
+}
+
+#video-wrapper {
+    margin-top: 16px;
+    padding: 1px;
+    background-color:rgba(0, 0, 0, 0.16);
+}
+
+.button:hover:before {
+    content: "• "
+}
+
+/* mobile */
+
+@media screen and (max-width: 800px) {
+    body {
+        background-color: #ffffff;
+        margin: 16px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        flex-direction: column;
+        grid-gap: 0px;
+        padding-top: 8px;
+    }
+}
