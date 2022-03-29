@@ -24,6 +24,16 @@ a {
     color: black;
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: black;
+}
+  
+::selection {
+    color: white;
+    background: black;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
