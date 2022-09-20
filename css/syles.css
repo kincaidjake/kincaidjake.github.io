@@ -17,8 +17,8 @@ body {
 
 p {
     color: #000000;
-    font-size: 32px;
-    line-height: 36px;
+    font-size: 36px;
+    line-height: 40px;
     font-family: helveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     margin: 0px;
@@ -49,8 +49,8 @@ a {
 
 h1 {
     color: #000000;
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 14px;
+    line-height: 14px;
     text-transform: uppercase;
     font-family: "HelveticaMonospacedW1G-Rg", Helvetica, Arial, sans-serif;
     font-weight: normal;
