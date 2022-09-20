@@ -49,8 +49,8 @@ a {
 
 h1 {
     color: #000000;
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 14px;
+    line-height: 14px;
     text-transform: uppercase;
     font-family: "HelveticaMonospacedW1G-Rg", Helvetica, Arial, sans-serif;
     font-weight: normal;
@@ -82,7 +82,7 @@ h1 {
 }
 
 .button:hover:before {
-    content: "&nbsp"
+    content: "  "
 }
 
 /* mobile */
