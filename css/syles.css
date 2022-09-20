@@ -83,6 +83,7 @@ h1 {
 
 .button:hover:before {
     content: " "
+    text-indent: 50px;
 }
 
 /* mobile */
