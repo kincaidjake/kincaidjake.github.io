@@ -5,6 +5,11 @@
     src: url("../fonts/HelveticaNeue.ttc");
 }
 
+@font-face {
+    font-family: HelveticaMonospacedW1G-Rg;
+    src: url("../fonts/HelveticaMonospacedW1G-Rg.otf");
+}
+
 body {
     background-color: #ffffff;
     margin: 16px;
@@ -47,7 +52,7 @@ h1 {
     font-size: 16px;
     line-height: 16px;
     text-transform: uppercase;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "HelveticaMonospacedW1G-Rg", Helvetica, Arial, sans-serif;
     font-weight: normal;
     letter-spacing: .04em;
 }
