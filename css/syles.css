@@ -77,7 +77,7 @@ h1 {
 }
 
 .button:hover:before {
-    content: "• "
+    content: " "
 }
 
 /* mobile */
