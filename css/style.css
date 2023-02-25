@@ -23,6 +23,7 @@ p {
     font-family: TobiasTRIAL-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     margin: 0px;
+    letter-spacing: -.005em;
 }
 
 h2 {
@@ -32,7 +33,7 @@ h2 {
     font-family: TobiasTRIAL-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     margin: 0px;
-    letter-spacing: -.025em;
+    letter-spacing: -.015em;
 }
 
 .container {
