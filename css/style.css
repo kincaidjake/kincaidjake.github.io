@@ -1,32 +1,18 @@
 /* base */
 
-@font-face {
-    font-family: HelveticaMonospacedW1G-Rg;
-    src: url("../fonts/HelveticaMonospacedW1G-Rg.otf");
-}
-
-@font-face {
-    font-family: TobiasTRIAL-Light;
-    src: url("../fonts/TobiasTRIAL-Light.otf");
-}
-
-body, html {
-overflow-x: hidden;
-}
-
 body {
     background-color: #ffffff;
-    margin: 0px;
+    overflow-x: hidden;
 }
 
 p {
     color: #000000;
-    font-size: 34px;
-    line-height: 38px;
-    font-family: TobiasTRIAL-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    margin: 0px;
-    letter-spacing: -.005em;
+    font-size: 16px;
+    line-height: 21px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h2 {
@@ -35,44 +21,11 @@ h2 {
     line-height: 96px;
     font-family: TobiasTRIAL-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
-    margin: 0px;
-    letter-spacing: -.015em;
 }
 
 .container {
     position: relative;
 }
-
-@keyframes ticker {
-    0% { transform: translate3d(0, 0, 0); }
-    100% { transform: translate3d(-100%, 0, 0); }
-        }
-        .tcontainer{
-          width: 100%;
-          overflow: hidden;
-        }
-        .ticker-wrap {
-          width: 100%;
-          padding-left: 100%;
-          z-index: 9;
-          position: absolute;
-        }
-        .ticker-move {
-          display: inline-block;
-          white-space: nowrap;
-          padding-right: 100%;
-          animation-iteration-count: infinite;
-          animation-timing-function: linear;
-          animation-name: ticker;
-          animation-duration: 12s;
-        }
-        .ticker-move:hover{
-          animation-play-state: paused;
-        }
-        .ticker-item{
-          display: inline-block;
-          padding: 0 2rem;
-        }
 
 a {
     text-decoration: none;
@@ -91,81 +44,86 @@ a {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    flex-direction: column;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     grid-gap: 16px;
-    margin-right: 16px;
-    margin-left: 16px;
 }
+
+.grid02 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
+    grid-gap: 16px;
+}
+
 
 h1 {
     color: #000000;
-    font-size: 12px;
-    line-height: 0px;
+    font-size: 11px;
+    line-height: 11px;
     text-transform: uppercase;
-    font-family: "HelveticaMonospacedW1G-Rg", Helvetica, Arial, sans-serif;
-    font-weight: normal;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: .02em;
 }
 
-.header {
-    margin-right: 16px;
-    margin-left: 16px;
-    border-left: rgba(0, 0, 0, 0.08) 1pt solid;
-    border-right: rgba(0, 0, 0, 0.08) 1pt solid;
+.spacer {
+    height: 128px;
+}
+.spacer02 {
+    height: 16px;
+}
+.spacer04 {
+    height: 8px;
 }
 
-.col {
-    border-left: rgba(0, 0, 0, 0.08) 1pt solid;
-    border-right: rgba(0, 0, 0, 0.08) 1pt solid;
-}
-
-.col02 {
-
-    z-index: 9;
-    position: absolute; 
-}
-
-.divider-02 {
-    height: 1px;
-    background-color: rgba(0, 0, 0, 0.08);
-}
-
-.divider {
-    height: 1px;
-    background-color: rgba(0, 0, 0, 0.08);
-}
-
-
-.spacer-01 {
+.spacer03 {
     height: 24px;
 }
 
-.spacer-02 {
-    height: 128px;
-}
-
 #video-wrapper {
-    margin-left: 16px;
-    margin-right: 16px;
-
 }
 
-.button:hover:before {
-    content: "●"
+.button {
+    border: 1px solid #00000024;
+    border-radius: 8px;
+    background: none;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px; 
+    line-height: 21px;
+    padding: 8px 16px;
 }
 
-/* mobile */
+.button:hover {
+    border: 1px solid #00000048;
+}
+
+
+/* tablet 
 
 @media screen and (max-width: 800px) {
-    body {
-        background-color: #ffffff;
-        margin: 0px;
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 16px;
+        margin-top: 20px;
     }
+}
 
+*/
+
+/* mobile 
+
+@media screen and (max-width: 480px) {
     .grid {
         display: grid;
         grid-template-columns: 1fr;
-        flex-direction: column;
-        grid-gap: 0px;
+        grid-gap: 16px;
+        margin-top: 20px;
     }
 }
+
+*/
